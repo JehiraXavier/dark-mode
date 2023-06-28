@@ -1,4 +1,4 @@
-const checkbox = document.getElementById("toggle--daynight")
+const checkbox = document.getElementById("toggle--daynight");
 checkbox.addEventListener("change", () => {
-  document.body.classList.toggle("dark")
-})
+  document.body.classList.toggle("dark");
+});

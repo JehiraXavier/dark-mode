@@ -7,25 +7,25 @@
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    min-height: 100vh;
-    margin: 0;
-    transition: background 0.4s linear;
-  }
-  
-  body.dark {
-    background-color: #292c35;
-  }
-  
-  body.dark h1 {
-    color: #fff;
-  }
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background 0.4s linear;
+}
+
+body.dark {
+  background-color: #292c35;
+}
+
+body.dark h1 {
+  color: #fff;
+}
 
 /* Container of toggle button  - 1*/
 .toggle {
@@ -195,20 +195,20 @@ body {
 }
 
 /* Day switch sky bg color */
-.toggle--daynight .toggle--checkbox:checked+.toggle--btn {
+.toggle--daynight .toggle--checkbox:checked + .toggle--btn {
   background-color: #9ee3fb;
   border: 5px solid #86c3d7;
 }
 
 /* Day switch sun bg color */
-.toggle--daynight .toggle--checkbox:checked+.toggle--btn:before {
+.toggle--daynight .toggle--checkbox:checked + .toggle--btn:before {
   left: 55px;
   background-color: #ffdf6d;
   border: 5px solid #e1c348;
 }
 
 /* day switch cloud animation happening */
-.toggle--daynight .toggle--checkbox:checked+.toggle--btn:after {
+.toggle--daynight .toggle--checkbox:checked + .toggle--btn:after {
   opacity: 100;
   animation-name: bounceIn;
   animation-duration: 0.6s;
@@ -218,7 +218,7 @@ body {
 }
 
 /* when night goes to day, the moon disappears */
-.toggle--daynight .toggle--checkbox:checked+.toggle--btn>.toggle--feature {
+.toggle--daynight .toggle--checkbox:checked + .toggle--btn > .toggle--feature {
   opacity: 0;
   box-shadow: rgba(255, 255, 255, 0.1) 30px -3px 0 -4px,
     rgba(255, 255, 255, 0.1) 12px 10px 0 -5px, #fff 38px 18px 0 -3px,
@@ -229,7 +229,10 @@ body {
 
 /* Action when clicking the toggle button */
 /* When moon and star goes to left */
-.toggle--daynight .toggle--checkbox:checked+.toggle--btn>.toggle--feature:before {
+.toggle--daynight
+  .toggle--checkbox:checked
+  + .toggle--btn
+  > .toggle--feature:before {
   left: 25px;
   transform: rotate(70deg);
 }

@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dark Theme Toggle</title>
-  <link rel="icon" href="./toggle-switch.png" type="image/icon type">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css'>
-  <link rel="stylesheet" href="styles.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dark Theme Toggle</title>
+    <link rel="icon" href="./toggle-switch.png" type="image/icon type" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>
+      Light/Dark Toggle<br />
+      Button
+    </h1>
 
-</head>
-<body>
+    <div class="toggle toggle--daynight">
+      <input type="checkbox" id="toggle--daynight" class="toggle--checkbox" />
+      <label class="toggle--btn" for="toggle--daynight">
+        <span class="toggle--feature"></span
+      ></label>
+    </div>
 
-<h1>Light/Dark Toggle<br> Button</h1>
-
-<div class="toggle toggle--daynight">
-  <input type="checkbox" id="toggle--daynight" class="toggle--checkbox">
-  <label class="toggle--btn" for="toggle--daynight">
-    <span class="toggle--feature"></span></label>
-</div>
-
-  <script  src="./main.js"></script>
-
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>
