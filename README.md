@@ -7,8 +7,6 @@
 
  ![Dark/light toggle](https://res.cloudinary.com/dgm9zfiuo/image/upload/v1698754654/Portfolio%20projects/dark_xeyhdg.png)
 
-## Project summary
-
 ### Technologies used
 * HTML
 * CSS
